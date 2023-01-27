@@ -3,9 +3,9 @@ public:
     int maxProduct(vector<int>& nums) {
         int n = nums.size();
 
-        int maxProd =1 , minProd=1, res = INT_MIN;
+        int maxProd = 1 , minProd = 1, res = INT_MIN;
 
-        for(int i =0;i<n;i++){
+        for(int i = 0; i < n; i++){
             int temp = maxProd;
 
             // storing maxProd in temp as it's value will change in next line 
