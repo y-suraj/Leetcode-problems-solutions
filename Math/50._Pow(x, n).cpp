@@ -22,3 +22,25 @@ public:
             return ans;
     }
 };
+
+// Recursive solution
+/*
+class Solution {
+public:
+    double fun(double x, int n){
+        if(x==0) return 0;
+        if(n==0) return 1;
+
+        double res = fun(x*x, n/2);
+        
+        if(n%2) return x * res;
+        else return res;
+    }
+    double myPow(double x, int n) {
+        
+        double ans = fun(x, n);
+
+        return (n<0) ? 1/ans : ans;
+    }
+};
+*/
