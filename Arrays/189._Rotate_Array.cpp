@@ -2,7 +2,7 @@ class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
         int n = nums.size();
-        if(k>n) k = k-n;
+        if(k>n) k = k%n;
         int start = abs(n-k);
         vector<int> answer;
 
