@@ -15,3 +15,23 @@ Array.prototype.last = function() {
  * arr.last(); // 3
  */
 ```
+
+## [2620. Counter](https://leetcode.com/problems/counter/description/)
+```js
+/**
+ * @param {number} n
+ * @return {Function} counter
+ */
+var createCounter = function(n) {
+    return function() {
+        return n++;
+    };
+};
+
+/** 
+ * const counter = createCounter(10)
+ * counter() // 10
+ * counter() // 11
+ * counter() // 12
+ */
+```
