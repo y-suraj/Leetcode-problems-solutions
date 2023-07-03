@@ -47,4 +47,5 @@ public:
             return false;
     }
 };
+// TC: O(N), where, N is the length of the string s
 ```
