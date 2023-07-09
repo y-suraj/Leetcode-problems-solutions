@@ -22,8 +22,8 @@ public:
         }
     }
 };
-TC: O(N^2), where N is the number of integers in the array.
-N^2 because `erase()` takes N time. Edge case: nums = [0, 0, 0, 0, 0]
+// TC: O(N^2), where N is the number of integers in the array.
+// N^2 because `erase()` takes N time. Edge case: nums = [0, 0, 0, 0, 0]
 ```
 
 Optimal approach:
@@ -51,7 +51,7 @@ public:
         }
     }
 };
-TC: O(N), where N is the number of integers in the array.
+// TC: O(N), where N is the number of integers in the array.
 ```
 Reference: [Move all Zeros to the end of the array](https://takeuforward.org/data-structure/move-all-zeros-to-the-end-of-the-array/), [Video](https://youtu.be/wvcQg43_V8U)
 
