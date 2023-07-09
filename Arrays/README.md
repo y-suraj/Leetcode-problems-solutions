@@ -26,6 +26,7 @@ public:
 // SC: O(N)
 // Here N is the number of integers in the array/vector
 ```
+Reference: [Rotate array by K places](https://youtu.be/wvcQg43_V8U)
 
 ### [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
 Brute force approach:
