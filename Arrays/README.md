@@ -1,6 +1,32 @@
 # Arrays
 
 ## Easy
+### [189. Rotate Array](https://leetcode.com/problems/rotate-array/description/)
+Approach 1:
+```cpp
+class Solution {
+public:
+    void rotate(vector<int>& nums, int k) {
+        int n = nums.size();
+        if(k > n) k = k % n;
+        int start = n - k;
+        vector<int> answer;
+
+        for(int i = start; i < n; i++){
+            answer.push_back(nums[i]);
+        }
+        for(int i = 0; i < start; i++){
+            answer.push_back(nums[i]);
+        }
+        for(int i = 0; i < n; i++)
+            nums[i] = answer[i];
+    }
+};
+// TC: O(N)
+// SC: O(N)
+// Here N is the number of integers in the array/vector
+```
+
 ### [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
 Brute force approach:
 ```cpp
