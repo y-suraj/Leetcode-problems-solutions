@@ -53,6 +53,6 @@ public:
 };
 // TC: O(N), where N is the number of integers in the array.
 ```
-Reference: [Move all Zeros to the end of the array](https://takeuforward.org/data-structure/move-all-zeros-to-the-end-of-the-array/), [Video](https://youtu.be/wvcQg43_V8U)
+Reference: [Move all Zeros to the end of the array](https://takeuforward.org/data-structure/move-all-zeros-to-the-end-of-the-array/), [Video](https://youtu.be/wvcQg43_V8U?t=1633)
 
 ## Refernces
