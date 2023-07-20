@@ -89,7 +89,7 @@ string read(int n, vector<int> book, int target)
     }
     return "NO";
 }
-TC: O(N), where N is the number of elements in the array.
+TC: O(N + logN), where N is the number of elements in the array.
 ```
 Reference: TUF - [Video](https://www.youtube.com/watch?v=UXDSeD9mN-k)
 
