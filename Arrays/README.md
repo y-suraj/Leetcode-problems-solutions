@@ -61,7 +61,7 @@ public:
         return {-1, -1};
     }
 };
-// TC: O(N), where N is the number of elements in the array
+// TC: O(N * logN), where N is the number of elements in the array
 ```
 Reference: TUF - [Video](https://www.youtube.com/watch?v=UXDSeD9mN-k)
 ### [189. Rotate Array](https://leetcode.com/problems/rotate-array/description/)
