@@ -1,6 +1,7 @@
 # Arrays
 
 ## Easy
+
 ### [1. Two Sum](https://leetcode.com/problems/two-sum/description/)
 Approach 1 - Brute:
 ```cpp
@@ -64,6 +65,34 @@ public:
 // TC: O(N * logN), where N is the number of elements in the array
 ```
 Reference: TUF - [Video](https://www.youtube.com/watch?v=UXDSeD9mN-k)
+
+### [2Sum - Alt](https://www.codingninjas.com/studio/problems/reading_6845742) - coding ninja
+Optimal solution
+```cpp
+string read(int n, vector<int> book, int target)
+{
+    // Using the two pointer approach
+    int left = 0, right = n - 1;
+    sort(book.begin(), book.end());
+
+    while(left < right) {
+        int sum = book[left] + book[right];
+        if(sum == target) {
+            return "YES";
+        }
+        else if(sum < target) {
+            left++;
+        }
+        else {
+            right--;
+        }
+    }
+    return "NO";
+}
+TC: O(N), where N is the number of elements in the array.
+```
+Reference: TUF - [Video](https://www.youtube.com/watch?v=UXDSeD9mN-k)
+
 ### [189. Rotate Array](https://leetcode.com/problems/rotate-array/description/)
 Approach 1:
 ```cpp
